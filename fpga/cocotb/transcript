@@ -1,0 +1,235 @@
+# Reading pref.tcl
+# do sim_build/runsim.do
+# Model Technology ModelSim - Lattice FPGA Edition vmap 2020.3 Lib Mapping Utility 2020.10 Oct 14 2020
+# vmap -c 
+# ** Warning: vmap will not overwrite local modelsim.ini.
+# Model Technology ModelSim - Lattice FPGA Edition vmap 2020.3 Lib Mapping Utility 2020.10 Oct 14 2020
+# vmap work sim_build/work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 13:49:24 on Jul 16,2022
+# vlog -reportprogress 300 -work work "+define+COCOTB_SIM" -sv -timescale 1ns/1ps -mfcu "+acc" /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../rtl/afifo.v /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../rtl/edge_det.v /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../rtl/sync.v /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../rtl/top.v /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v 
+# -- Compiling module afifo
+# -- Compiling module pos_edge_det
+# -- Compiling module neg_edge_det
+# -- Compiling module sync
+# -- Compiling module top
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	afifo
+# 	neg_edge_det
+# 	sync
+# 	top
+# End time: 13:49:24 on Jul 16,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Warning: (vsim-159) Mode option -64 is not supported in this context and will be ignored.
+# vsim -onfinish stop -pli "/home/ncicek/.local/lib/python3.10/site-packages/cocotb/libs/libcocotbvpi_modelsim.so" sim_build/work.top 
+# Start time: 13:49:24 on Jul 16,2022
+# //  ModelSim - Lattice FPGA Edition 2020.3 Oct 14 2020 Linux 5.18.10-1-MANJARO
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading sim_build/work.top
+# ** Error: (vsim-3033) Instantiation of 'OSCH' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../rtl/top.v Line: 42
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# Loading work.pos_edge_det
+# Loading work.fifo
+# ** Error: (vsim-3033) Instantiation of 'INV' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 69
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'AND2' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 71
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'INV' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 73
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'AND2' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 75
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'ROM16X1A' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 78
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'ROM16X1A' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 82
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'ROM16X1A' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 86
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'ROM16X1A' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 90
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'ROM16X1A' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 94
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'ROM16X1A' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 98
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 115
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 141
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 167
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 193
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 219
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 245
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 271
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 297
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 323
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 349
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 375
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 401
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 427
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 453
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 479
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FIFO8KB' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 505
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FD1P3BX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 517
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FD1P3DX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 521
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FD1P3DX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 525
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FD1P3DX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 529
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FD1P3BX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 533
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FD1P3DX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 537
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FD1P3DX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 541
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'VLO' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 545
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'VHI' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 547
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'FADD2B' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 549
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'CU2' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 552
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'MUX21' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 555
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'MUX21' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 557
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'MUX21' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 559
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'MUX21' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 561
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'MUX21' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 563
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'MUX21' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 565
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'MUX21' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 567
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# ** Error: (vsim-3033) Instantiation of 'MUX21' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /top/fifo File: /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/../lattice/fifo.v Line: 569
+#         Searched libraries:
+#             /run/media/ncicek/3TB/Documents/Git_Local/ft601_breakout/fpga/cocotb/sim_build/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./sim_build/runsim.do PAUSED at line 10
+# End time: 13:49:44 on Jul 16,2022, Elapsed time: 0:00:20
+# Errors: 46, Warnings: 1

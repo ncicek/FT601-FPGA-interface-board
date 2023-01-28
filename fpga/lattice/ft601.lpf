@@ -1,0 +1,159 @@
+RVL_ALIAS "i_ftdi_clk" "u_ft245/i_ftdi_clk"; 
+RVL_ALIAS "i_ftdi_clk" "i_ftdi_clk"; 
+LOCATE COMP "i_ftdi_clk" SITE "H14" ;
+LOCATE COMP "i_reset_n" SITE "B3" ;
+LOCATE COMP "i_ftdi_rxf_n" SITE "M15" ;
+LOCATE COMP "i_ftdi_txe_n" SITE "N16" ;
+LOCATE COMP "o_ftdi_oe_n" SITE "L16" ;
+LOCATE COMP "o_ftdi_rd_n" SITE "L15" ;
+LOCATE COMP "o_ftdi_wr_n" SITE "M16" ;
+LOCATE COMP "o_serial_out" SITE "T3" ;
+LOCATE COMP "o_ftdi_reset_n" SITE "K16" ;
+LOCATE COMP "io_ftdi_data[0]" SITE "A3" ;
+LOCATE COMP "io_ftdi_data[1]" SITE "B4" ;
+LOCATE COMP "io_ftdi_data[2]" SITE "A4" ;
+LOCATE COMP "io_ftdi_data[3]" SITE "B5" ;
+LOCATE COMP "io_ftdi_data[4]" SITE "A5" ;
+LOCATE COMP "io_ftdi_data[5]" SITE "B6" ;
+LOCATE COMP "io_ftdi_data[6]" SITE "B7" ;
+LOCATE COMP "io_ftdi_data[7]" SITE "B9" ;
+LOCATE COMP "io_ftdi_data[8]" SITE "D9" ;
+LOCATE COMP "io_ftdi_data[9]" SITE "F7" ;
+LOCATE COMP "io_ftdi_data[10]" SITE "A10" ;
+LOCATE COMP "io_ftdi_data[11]" SITE "C4" ;
+LOCATE COMP "io_ftdi_data[12]" SITE "E6" ;
+LOCATE COMP "io_ftdi_data[13]" SITE "D6" ;
+LOCATE COMP "io_ftdi_data[14]" SITE "C5" ;
+LOCATE COMP "io_ftdi_data[15]" SITE "C7" ;
+LOCATE COMP "io_ftdi_data[16]" SITE "D7" ;
+LOCATE COMP "io_ftdi_data[17]" SITE "D8" ;
+LOCATE COMP "io_ftdi_data[18]" SITE "E7" ;
+LOCATE COMP "io_ftdi_data[19]" SITE "E9" ;
+LOCATE COMP "io_ftdi_data[20]" SITE "E8" ;
+LOCATE COMP "io_ftdi_data[21]" SITE "C10" ;
+LOCATE COMP "io_ftdi_data[22]" SITE "F9" ;
+LOCATE COMP "io_ftdi_data[23]" SITE "D10" ;
+LOCATE COMP "io_ftdi_data[24]" SITE "E10" ;
+LOCATE COMP "io_ftdi_data[25]" SITE "E11" ;
+LOCATE COMP "io_ftdi_data[26]" SITE "C12" ;
+LOCATE COMP "io_ftdi_data[27]" SITE "B12" ;
+LOCATE COMP "io_ftdi_data[28]" SITE "F8" ;
+LOCATE COMP "io_ftdi_data[29]" SITE "C13" ;
+LOCATE COMP "io_ftdi_data[30]" SITE "A13" ;
+LOCATE COMP "io_ftdi_data[31]" SITE "K12" ;
+LOCATE COMP "io_ftdi_be[0]" SITE "K13" ;
+LOCATE COMP "io_ftdi_be[1]" SITE "M14" ;
+LOCATE COMP "io_ftdi_be[2]" SITE "N14" ;
+LOCATE COMP "io_ftdi_be[3]" SITE "L14" ;
+LOCATE COMP "o_leds_n[0]" SITE "H11" ;
+LOCATE COMP "o_leds_n[1]" SITE "J13" ;
+LOCATE COMP "o_leds_n[2]" SITE "J11" ;
+LOCATE COMP "o_leds_n[3]" SITE "L12" ;
+LOCATE COMP "o_leds_n[4]" SITE "K11" ;
+LOCATE COMP "o_leds_n[5]" SITE "L13" ;
+LOCATE COMP "o_leds_n[6]" SITE "N15" ;
+LOCATE COMP "o_leds_n[7]" SITE "P16" ;
+LOCATE COMP "debug[0]" SITE "H1" ;
+LOCATE COMP "debug[1]" SITE "H2" ;
+FREQUENCY PORT "i_ftdi_clk" 100.000000 MHz ;
+BLOCK JTAGPATHS ;
+IOBUF PORT "i_ftdi_clk" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_be[0]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_be[1]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_be[2]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_be[3]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[0]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[1]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[2]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[3]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[4]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[5]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[6]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[7]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[8]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[9]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[10]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[11]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[12]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[13]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[14]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[15]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[16]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[17]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[18]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[19]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[20]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[21]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[22]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[23]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[24]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[25]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[26]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[27]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[28]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[29]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[30]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "io_ftdi_data[31]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_ftdi_oe_n" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_ftdi_rd_n" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_ftdi_wr_n" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_serial_out" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "i_ftdi_rxf_n" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_leds_n[0]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_leds_n[1]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_leds_n[2]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_leds_n[3]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_leds_n[4]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_leds_n[5]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_leds_n[6]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_leds_n[7]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_ftdi_reset_n" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "i_ftdi_txe_n" IO_TYPE=LVCMOS33 ;
+DEFINE PORT GROUP "input data (fifo master)" "o_ftdi_oe_n" 
+"o_ftdi_wr_n" 
+"o_ftdi_rd_n" ;
+DEFINE PORT GROUP "output data (fifo slave)" "i_ftdi_rxf_n" 
+"i_ftdi_txe_n" ;
+INPUT_SETUP GROUP "output data (fifo slave)"3.000000 ns HOLD 3.500000 ns CLKPORT "i_ftdi_clk" SS ;
+VOLTAGE 3.300 V;
+IOBUF PORT "i_reset_n" IO_TYPE=LVCMOS33 PULLMODE=NONE ;
+IOBUF PORT "debug[0]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "debug[1]" IO_TYPE=LVCMOS33 ;
+DEFINE PORT GROUP "bi_dir" "io_ftdi_data[31]" 
+"io_ftdi_data[30]" 
+"io_ftdi_data[29]" 
+"io_ftdi_data[28]" 
+"io_ftdi_data[27]" 
+"io_ftdi_data[26]" 
+"io_ftdi_data[25]" 
+"io_ftdi_data[24]" 
+"io_ftdi_data[23]" 
+"io_ftdi_data[22]" 
+"io_ftdi_data[21]" 
+"io_ftdi_data[20]" 
+"io_ftdi_data[19]" 
+"io_ftdi_data[18]" 
+"io_ftdi_data[17]" 
+"io_ftdi_data[16]" 
+"io_ftdi_data[15]" 
+"io_ftdi_data[14]" 
+"io_ftdi_data[13]" 
+"io_ftdi_data[12]" 
+"io_ftdi_data[11]" 
+"io_ftdi_data[10]" 
+"io_ftdi_data[9]" 
+"io_ftdi_data[8]" 
+"io_ftdi_data[7]" 
+"io_ftdi_data[6]" 
+"io_ftdi_data[5]" 
+"io_ftdi_data[4]" 
+"io_ftdi_data[3]" 
+"io_ftdi_data[2]" 
+"io_ftdi_data[1]" 
+"io_ftdi_data[0]" 
+"io_ftdi_be[3]" 
+"io_ftdi_be[2]" 
+"io_ftdi_be[1]" 
+"io_ftdi_be[0]" ;
+CLOCK_TO_OUT GROUP "bi_dir" 9.100000 ns MIN 4.800000 ns CLKPORT "i_ftdi_clk" ;
+CLOCK_TO_OUT GROUP "input data (fifo master)" 9.100000 ns MIN 4.800000 ns CLKPORT "i_ftdi_clk" ;

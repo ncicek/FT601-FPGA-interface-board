@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "FT601Q-B-T")(type "KiCad")(uri "${KIPRJMOD}/parts/FT601Q-B-T.kicad_sym")(options "")(descr ""))
+  (lib (name "UJ31-CH-G2-SMT-TR")(type "Legacy")(uri "${KIPRJMOD}/parts/UJ31-CH-G2-SMT-TR.lib")(options "")(descr ""))
+)

@@ -1,0 +1,50 @@
+FREQUENCY NET "slow_clock" 88.670000 MHz ;
+FREQUENCY PORT "i_ftdi_clk" 100.000000 MHz ;
+RVL_ALIAS "i_ftdi_clk" "u_ft245/i_ftdi_clk"; 
+RVL_ALIAS "i_ftdi_clk" "i_ftdi_clk"; 
+BLOCK JTAGPATHS ;
+DEFINE PORT GROUP "input data (fifo master)" "o_ftdi_oe_n" 
+"o_ftdi_wr_n" 
+"o_ftdi_rd_n" ;
+DEFINE PORT GROUP "output data (fifo slave)" "i_ftdi_rxf_n" 
+"i_ftdi_txe_n" ;
+INPUT_SETUP GROUP "output data (fifo slave)"3.000000 ns HOLD 3.500000 ns CLKPORT "i_ftdi_clk" SS ;
+VOLTAGE 3.300 V;
+DEFINE PORT GROUP "bi_dir" "io_ftdi_data[31]" 
+"io_ftdi_data[30]" 
+"io_ftdi_data[29]" 
+"io_ftdi_data[28]" 
+"io_ftdi_data[27]" 
+"io_ftdi_data[26]" 
+"io_ftdi_data[25]" 
+"io_ftdi_data[24]" 
+"io_ftdi_data[23]" 
+"io_ftdi_data[22]" 
+"io_ftdi_data[21]" 
+"io_ftdi_data[20]" 
+"io_ftdi_data[19]" 
+"io_ftdi_data[18]" 
+"io_ftdi_data[17]" 
+"io_ftdi_data[16]" 
+"io_ftdi_data[15]" 
+"io_ftdi_data[14]" 
+"io_ftdi_data[13]" 
+"io_ftdi_data[12]" 
+"io_ftdi_data[11]" 
+"io_ftdi_data[10]" 
+"io_ftdi_data[9]" 
+"io_ftdi_data[8]" 
+"io_ftdi_data[7]" 
+"io_ftdi_data[6]" 
+"io_ftdi_data[5]" 
+"io_ftdi_data[4]" 
+"io_ftdi_data[3]" 
+"io_ftdi_data[2]" 
+"io_ftdi_data[1]" 
+"io_ftdi_data[0]" 
+"io_ftdi_be[3]" 
+"io_ftdi_be[2]" 
+"io_ftdi_be[1]" 
+"io_ftdi_be[0]" ;
+CLOCK_TO_OUT GROUP "bi_dir" 9.100000 ns MIN 4.800000 ns CLKPORT "i_ftdi_clk" ;
+CLOCK_TO_OUT GROUP "input data (fifo master)" 9.100000 ns MIN 4.800000 ns CLKPORT "i_ftdi_clk" ;

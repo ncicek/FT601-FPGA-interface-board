@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="ft601" device="LCMXO3LF-6900C-5BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="walking_bit_gen" top="top"/>
+        <Source name="../rtl/top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="../rtl/edge_det.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl/afifo.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl/ft245.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl/debounce.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl/sync.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl/walking_bit_gen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl/sfifo.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="ft601.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="reveal.rva" type="Reveal Analyzer Project File" type_short="RVA">
+            <Options/>
+        </Source>
+        <Source name="reveal.rvl" type="Reveal" type_short="Reveal" excluded="TRUE">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="ft6011.sty"/>
+    <Strategy name="io assist mod" file="io assist mod.sty"/>
+</BaliProject>

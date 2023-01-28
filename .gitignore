@@ -1,0 +1,250 @@
+#VSCODE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+
+#KICAD
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
+
+
+
+
+#C
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+
+#COCOTB
+*.py[cod]
+
+# C extensions
+*.so
+*.dll
+
+# C objects
+*.o
+
+# Python and C++ code coverage
+.coverage
+.coverage.cocotb
+*.gcno
+*.gcda
+*.gcov
+
+# Packaging
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+sdist
+obj
+develop-eggs
+.installed.cfg
+__pycache__
+.tox
+.nox
+.eggs
+
+# Vim tmp files
+*.swp
+*~
+
+# VSCode project files
+.vscode/
+*.code-workspace
+
+# Emacs tmp files
+\#*\#
+\.\#*
+
+# Mergetool tmp files
+*.orig
+*.bak
+
+# Waveforms
+*.vcd
+*.fst
+*.fst.hier
+
+# Results
+results.xml
+combined_results.xml
+
+# Debuggers
+.gdb_history
+
+# VCS files
+*.tab
+sim_build
+ucli.key
+
+# Pytest
+.pytest_cache
+
+# Cadence Incisive/Xcelium
+*.elog
+irun.log
+xrun.log
+irun.key
+xrun.key
+irun.history
+xrun.history
+INCA_libs
+xcelium.d
+ncelab_*.err
+xmelab_*.err
+ncsim_*.err
+xmsim_*.err
+bpad_*.err
+.bpad/
+.simvision/
+waves.shm/
+
+# Interface libraries built on setup
+cocotb/libs
+pip-wheel-metadata/
+
+# Mentor Modelsim/Questa
+tests/test_cases/*/modelsim.ini
+tests/test_cases/*/transcript
+examples/*/tests/modelsim.ini
+examples/*/tests/transcript
+*.wlf
+
+# Riviera
+tests/test_cases/*/library.cfg
+tests/test_cases/*/dataset.asdb
+tests/test_cases/*/compile
+examples/*/tests/library.cfg
+examples/*/tests/dataset.asdb
+examples/*/tests/compile
+
+# Tachyon DA CVC
+tests/test_cases/*/verilog.log
+examples/*/tests/verilog.log
+
+# Build artifacts
+/dist/
+
+
+
+#LATTICE
+*.html
+impl*/
+*.xml
+.build_status
+.run_manager.ini
+.recovery
+.spread_sheet.ini
+.spreadsheet_view.ini
+*.dir/
+*.log
+*.tcl
+*.ccl
+*.srp
+*.dmp
+._Real_._Math_.vhd
+_math_real.vhd
+
+
+#CMAKE
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cm
+
+
+*.pdf

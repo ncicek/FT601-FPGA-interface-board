@@ -1,0 +1,68 @@
+<Project ModBy="Inserter" SigType="0" Name="D:/Documents/Git_Local/ft601_breakout/fpga/lattice/reveal.rvl" Date="2022-07-17">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="lse" DeviceFamily="MachXO3LF" DesignName="ft601"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="434332812" Name="top_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="u_ft245/i_ftdi_clk" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="4096"/>
+            <Capture Mode="0" MinSamplesPerTrig="16"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_top_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="u_ft245/i_ftdi_rxf_n"/>
+                <Sig Type="SIG" Name="u_ft245/i_ftdi_txe_n"/>
+                <Bus Name="u_ft245/io_ftdi_data">
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:0"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:1"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:2"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:3"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:4"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:5"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:6"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:7"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:8"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:9"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:10"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:11"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:12"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:13"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:14"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:15"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:16"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:17"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:18"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:19"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:20"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:21"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:22"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:23"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:24"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:25"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:26"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:27"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:28"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:29"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:30"/>
+                    <Sig Type="SIG" Name="u_ft245/io_ftdi_data:31"/>
+                </Bus>
+                <Sig Type="SIG" Name="u_ft245/o_ftdi_oe_n"/>
+                <Sig Type="SIG" Name="u_ft245/o_ftdi_rd_n"/>
+                <Sig Type="SIG" Name="u_ft245/o_ftdi_wr_n"/>
+                <Bus Name="u_ft245/fsm">
+                    <Sig Type="SIG" Name="u_ft245/fsm:0"/>
+                    <Sig Type="SIG" Name="u_ft245/fsm:1"/>
+                </Bus>
+                <Sig Type="SIG" Name="u_ft245/empty"/>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="u_ft245/i_ftdi_rxf_n,"/>
+                <TU Serialbits="0" Type="0" ID="2" Sig="u_ft245/empty,"/>
+                <TE MaxSequence="2" MaxEvnCnt="1" ID="1" Resource="0"/>
+                <TE MaxSequence="2" MaxEvnCnt="1" ID="2" Resource="0"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

@@ -1,0 +1,63 @@
+<Project ModBy="Analyzer" Name="D:/Documents/Git_Local/ft601_breakout/fpga/lattice/reveal.rvs" Date="2022-07-18">
+ <Core Name="top_LA0">
+  <Setting>
+   <Capture SamplesPerTrig="4096" NumTrigsCap="1"/>
+   <Event EventCnt="0" CntEnableRun="0"/>
+   <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+  </Setting>
+  <Dataset Name="Base">
+   <Trace>
+    <Sig Name="u_ft245/i_ftdi_rxf_n"/>
+    <Sig Name="u_ft245/i_ftdi_txe_n"/>
+    <Bus Name="u_ft245/io_ftdi_data" Radix="0">
+     <Sig Name="u_ft245/io_ftdi_data:0"/>
+     <Sig Name="u_ft245/io_ftdi_data:1"/>
+     <Sig Name="u_ft245/io_ftdi_data:2"/>
+     <Sig Name="u_ft245/io_ftdi_data:3"/>
+     <Sig Name="u_ft245/io_ftdi_data:4"/>
+     <Sig Name="u_ft245/io_ftdi_data:5"/>
+     <Sig Name="u_ft245/io_ftdi_data:6"/>
+     <Sig Name="u_ft245/io_ftdi_data:7"/>
+     <Sig Name="u_ft245/io_ftdi_data:8"/>
+     <Sig Name="u_ft245/io_ftdi_data:9"/>
+     <Sig Name="u_ft245/io_ftdi_data:10"/>
+     <Sig Name="u_ft245/io_ftdi_data:11"/>
+     <Sig Name="u_ft245/io_ftdi_data:12"/>
+     <Sig Name="u_ft245/io_ftdi_data:13"/>
+     <Sig Name="u_ft245/io_ftdi_data:14"/>
+     <Sig Name="u_ft245/io_ftdi_data:15"/>
+     <Sig Name="u_ft245/io_ftdi_data:16"/>
+     <Sig Name="u_ft245/io_ftdi_data:17"/>
+     <Sig Name="u_ft245/io_ftdi_data:18"/>
+     <Sig Name="u_ft245/io_ftdi_data:19"/>
+     <Sig Name="u_ft245/io_ftdi_data:20"/>
+     <Sig Name="u_ft245/io_ftdi_data:21"/>
+     <Sig Name="u_ft245/io_ftdi_data:22"/>
+     <Sig Name="u_ft245/io_ftdi_data:23"/>
+     <Sig Name="u_ft245/io_ftdi_data:24"/>
+     <Sig Name="u_ft245/io_ftdi_data:25"/>
+     <Sig Name="u_ft245/io_ftdi_data:26"/>
+     <Sig Name="u_ft245/io_ftdi_data:27"/>
+     <Sig Name="u_ft245/io_ftdi_data:28"/>
+     <Sig Name="u_ft245/io_ftdi_data:29"/>
+     <Sig Name="u_ft245/io_ftdi_data:30"/>
+     <Sig Name="u_ft245/io_ftdi_data:31"/>
+    </Bus>
+    <Sig Name="u_ft245/o_ftdi_oe_n"/>
+    <Sig Name="u_ft245/o_ftdi_rd_n"/>
+    <Sig Name="u_ft245/o_ftdi_wr_n"/>
+    <Bus Name="u_ft245/fsm" Radix="0">
+     <Sig Name="u_ft245/fsm:0"/>
+     <Sig Name="u_ft245/fsm:1"/>
+    </Bus>
+    <Sig Name="u_ft245/empty"/>
+   </Trace>
+   <Trigger>
+    <TU Operator="7" Name="TU1" ID="1" Value="0" Radix="0"/>
+    <TU Operator="6" Name="TU2" ID="2" Value="0" Radix="0"/>
+    <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+    <TE Enable="1" Expression="TU2" Name="TE2" ID="2"/>
+   </Trigger>
+  </Dataset>
+ </Core>
+</Project>

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "parts")(type "KiCad")(uri "${KIPRJMOD}/parts")(options "")(descr ""))
+  (lib (name "usb_microb_3.0_seagate")(type "KiCad")(uri "${KIPRJMOD}/parts/usb_microb_3.0_seagate.pretty")(options "")(descr ""))
+)
