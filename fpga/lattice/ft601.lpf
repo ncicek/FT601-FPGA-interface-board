@@ -114,7 +114,6 @@ DEFINE PORT GROUP "input data (fifo master)" "o_ftdi_oe_n"
 "o_ftdi_rd_n" ;
 DEFINE PORT GROUP "output data (fifo slave)" "i_ftdi_rxf_n" 
 "i_ftdi_txe_n" ;
-INPUT_SETUP GROUP "output data (fifo slave)"3.000000 ns HOLD 3.500000 ns CLKPORT "i_ftdi_clk" SS ;
 VOLTAGE 3.300 V;
 IOBUF PORT "i_reset_n" IO_TYPE=LVCMOS33 PULLMODE=NONE ;
 IOBUF PORT "debug[0]" IO_TYPE=LVCMOS33 ;
@@ -155,5 +154,11 @@ DEFINE PORT GROUP "bi_dir" "io_ftdi_data[31]"
 "io_ftdi_be[2]" 
 "io_ftdi_be[1]" 
 "io_ftdi_be[0]" ;
+TEMPERATURE 40.000 C;
+INPUT_SETUP GROUP "output data (fifo slave)"3.000000 ns HOLD 3.500000 ns CLKPORT "i_ftdi_clk" SS ;
 CLOCK_TO_OUT GROUP "bi_dir" 9.100000 ns MIN 4.800000 ns CLKPORT "i_ftdi_clk" ;
 CLOCK_TO_OUT GROUP "input data (fifo master)" 9.100000 ns MIN 4.800000 ns CLKPORT "i_ftdi_clk" ;
+LOCATE COMP "debug[2]" SITE "H3" ;
+LOCATE COMP "debug[3]" SITE "J4" ;
+IOBUF PORT "debug[2]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "debug[3]" IO_TYPE=LVCMOS33 ;

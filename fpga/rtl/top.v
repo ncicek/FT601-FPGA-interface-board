@@ -14,33 +14,14 @@ module top (i_reset_n, i_ftdi_clk, i_ftdi_txe_n, i_ftdi_rxf_n,
 	output wire [3:0] debug /* synthesis syn_force_pads = 1*/;
 	
 
-	wire slow_clock;
+	/*wire slow_clock;
 	OSCH OSCinst0 (.STDBY(1'b0),.OSC(slow_clock),.SEDSTDBY());
-	defparam OSCinst0.NOM_FREQ = "88.67" ;
+	defparam OSCinst0.NOM_FREQ = "88.67" ;*/
 	
-	wire reset, reset_n_ff;
-
-	sync u_sync(
-		.i_clk_in  (slow_clock  ),
-		.i_data    (i_reset_n    ),
-		.i_clk_out (slow_clock ),
-		.o_data    (reset_n_ff    )
-	);
+	wire reset;
+	assign reset = !i_reset_n;
 	
 	assign o_serial_out = i_reset_n;
-
-	Debounce 
-	#(
-		.MAX_COUNT    (16)
-	)
-	u_Debounce(
-		.clock (slow_clock ),
-		.in    (!reset_n_ff    ),
-		.out   (reset   ),
-		.edj   (   ),
-		.rise  (  ),
-		.fall  (  )
-	);
 
 	PUR PUR_INST (.PUR (reset));
 	defparam PUR_INST.RST_PULSE = 200;
@@ -48,7 +29,6 @@ module top (i_reset_n, i_ftdi_clk, i_ftdi_txe_n, i_ftdi_rxf_n,
 
 	ft245_transmitter u_ft245(
 		.i_ftdi_clk   (i_ftdi_clk   ),
-		.slow_clock   (slow_clock   ),
 		.i_reset      (reset    ),
 		.i_ftdi_txe_n (i_ftdi_txe_n ),
 		.i_ftdi_rxf_n (i_ftdi_rxf_n ),
@@ -64,3 +44,4 @@ module top (i_reset_n, i_ftdi_clk, i_ftdi_txe_n, i_ftdi_rxf_n,
 	);
 	
 endmodule
+
