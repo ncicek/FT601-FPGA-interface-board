@@ -127,31 +127,49 @@ SoapySDR::ArgInfoList SoapyFtdiSDR::getStreamArgsInfo(const int direction, const
 /*******************************************************************
  * Async thread work
  ******************************************************************/
+static void write_reg(FT_HANDLE handle, uint32_t addr, uint32_t data) {
+    uint32_t write_data[2];
+    uint8_t *pointer = (uint8_t*)write_data;
+    ULONG transfered;
+    write_data[0] = (REG_WRITE << 31) | addr;
+    write_data[1] = data;
+
+    FT_WritePipeEx(handle, 0, pointer, sizeof(uint32_t)*2, &transfered, 1000);
+}
 
 static void ftdi_reader(FT_HANDLE handle)
 {
+    FT_STATUS status;
+    uint64_t byte_counter = 0;
+    ULONG bytes_read;
 	std::unique_ptr<uint8_t[]> raw_buf(new uint8_t[DEFAULT_BUFFER_LENGTH*4]);
-
     std::complex<float> cf32_buf[DEFAULT_BUFFER_LENGTH];
 
 	while (!do_exit) {
-        ULONG count = 0;
-        if (FT_OK != FT_ReadPipeEx(handle, 0,
-                    raw_buf.get(), DEFAULT_BUFFER_LENGTH*4, &count, 1000)) {
-            do_exit = true;
-            break;
-        }
-
-        for (uint32_t i = 0; i < (DEFAULT_BUFFER_LENGTH); i++) {
-            uint32_t dword = 0;
-            for (uint8_t j = 0; j < 4; j++) {
-                dword |= raw_buf[i * 4 + j] << (j * 8);
+        //request a number of dwords
+        write_reg(handle, REG_ADDR_MODE, (MODE_STREAM << 31) | NUM_DWORDS);
+        
+        //read them
+        while (byte_counter < (NUM_DWORDS*4)) {
+           
+            status = FT_ReadPipeEx(handle, 0, raw_buf.get(), DEFAULT_BUFFER_LENGTH*1, &bytes_read, 1000);
+            if (status != FT_OK) {
+                do_exit = true;
+                break;
             }
-            cf32_buf[i] = dword;
-        }
+            byte_counter += bytes_read;
 
-        cb_push_back(&cb, cf32_buf);
-	}
+            for (uint32_t i = 0; i < (DEFAULT_BUFFER_LENGTH); i++) {
+                uint32_t dword = 0;
+                for (uint8_t j = 0; j < 4; j++) {
+                    dword |= raw_buf[i * 4 + j] << (j * 8);
+                }
+                cf32_buf[i] = dword;
+            }
+
+            cb_push_back(&cb, cf32_buf);
+        }
+    }
 	printf("Read stopped\r\n");
 }
 

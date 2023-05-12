@@ -15,6 +15,12 @@
 #define BYTES_PER_SAMPLE 2
 #define BYTES_PER_FLOAT (sizeof(float)/sizeof(uint8_t))
 
+#define REG_ADDR_MODE 1
+#define MODE_STREAM 1
+#define REG_WRITE 1
+
+#define NUM_DWORDS 1073741808 //30 bits
+
 typedef enum rtlsdrRXFormat
 {
     RTL_RX_FORMAT_FLOAT32, RTL_RX_FORMAT_INT16, RTL_RX_FORMAT_INT8
